@@ -3,7 +3,6 @@ use warnings;
 use Test::More;
 use Test::TinyMocker;
 use Guard qw( scope_guard );
-use Data::Dumper;
 
 my $class = 'Time::Spent';
 
