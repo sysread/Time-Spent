@@ -15,7 +15,7 @@ subtest basics => sub {
 
   my $length  = 3;
   my $tracker = new_ok $class, [ length => $length ];
-  cmp_ok $tracker->avg, '==', 0, 'initial avg is 0';
+  ok !defined $tracker->avg, 'initial avg is 0';
 
   ok !$tracker->is_tracking( 'a' ), '!is_tracking a';
   is $tracker->start( 'a' ), 1, 'start a';
