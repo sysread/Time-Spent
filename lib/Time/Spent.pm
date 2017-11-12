@@ -128,7 +128,7 @@ sub start {
 =head2 stop
 
 Completes tracking for the specified identifiers. The time taken since the call
-to L<./start> for each identifier is then added to the historical average time.
+to L</start> for each identifier is then added to the historical average time.
 Removes completed entries' times from tracking as needed to maintain the
 expected history length. Croaks if any provided identifier is not tracked or if
 no identifiers are provided.
@@ -184,7 +184,7 @@ sub avg { $_[ 0 ]->{ average } }
 =head2 is_tracking
 
 Returns true if the identifier passed is currently being tracked (that is, it
-has been L<./start>ed but not L<./stop>ped.
+has been L</start>ed but not L</stop>ped.
 
 =cut
 
