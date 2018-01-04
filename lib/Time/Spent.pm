@@ -71,7 +71,7 @@ sub param (\%$;$) {
 =head2 new
 
 Create a new C<Time::Spent> object. Accepts one named parameter, C<length>,
-which must be a positive whole number specifying the number of historical
+which must be a positive whole number greater than zero, specifying the number of historical
 entries to use in the calculation of the rolling average.
 
   Time::Spent->new( length => 30 );
